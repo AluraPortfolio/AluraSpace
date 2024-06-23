@@ -1,6 +1,6 @@
 from django.db import models
 
-class Fotografia(models.model):
+class Fotografia(models.Model):
     # null=false é required e blank=false não pode ser vazia ''
     nome = models.CharField(max_length=100, null=False, blank=False)
     legenda = models.CharField(max_length=150, null=False, blank=False)
